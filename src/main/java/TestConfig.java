@@ -1,11 +1,7 @@
-import com.google.inject.Inject;
-import com.velocitypowered.api.plugin.annotation.DataDirectory;
-import com.velocitypowered.api.proxy.ProxyServer;
 import net.kyori.text.TextComponent;
 import net.kyori.text.format.TextColor;
 import ninja.leaping.configurate.ConfigurationNode;
 import ninja.leaping.configurate.gson.GsonConfigurationLoader;
-import ninja.leaping.configurate.objectmapping.ObjectMappingException;
 
 import java.io.IOException;
 import java.nio.file.*;
@@ -49,12 +45,10 @@ public class TestConfig {
             _key = configDir.register(_watchService, StandardWatchEventKinds.ENTRY_MODIFY);
 
 
-           // return true;
 
         }catch (IOException e){
             e.printStackTrace();
         }
-     //   return false;
     }
 
     public static List<String> getUUID(){
@@ -73,12 +67,10 @@ public class TestConfig {
     public static void getPlayerFromFile(UUID uuid, String name){
 
        if(getUUID().contains(uuid.toString())){
-        //   VelocityWelcome.server.getConsoleCommandSource().sendMessage(TextComponent.of("Found an existing player!"));
            return;
        }else{
            VelocityWelcome.server.getConsoleCommandSource().sendMessage(TextComponent.of("Welcome to the server, " + name));
            VelocityWelcome.server.broadcast(TextComponent.of("Welcome to the server, ").color(TextColor.GREEN).append(TextComponent.of(name).color(TextColor.GOLD)));
-          // VelocityWelcome.server.getConsoleCommandSource().sendMessage(TextComponent.of(getUUID().toString()));
            String playerUUID = uuid.toString();
            addPlayer(playerUUID, name);
        }
