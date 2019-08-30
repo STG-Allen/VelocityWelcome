@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <bytecodeTargetLevel>
+      <module name="VelocityWelcome.msrepository.main" target="1.8" />
+      <module name="VelocityWelcome.msrepository.msr-api.api-config.main" target="1.8" />
+      <module name="VelocityWelcome.msrepository.msr-api.api-config.test" target="1.8" />
+      <module name="VelocityWelcome.msrepository.msr-api.api-repository.main" target="1.8" />
+      <module name="VelocityWelcome.msrepository.msr-api.api-repository.test" target="1.8" />
+      <module name="VelocityWelcome.msrepository.msr-api.main" target="1.8" />
+      <module name="VelocityWelcome.msrepository.msr-api.test" target="1.8" />
+      <module name="VelocityWelcome.msrepository.msr-sponge.main" target="1.8" />
+      <module name="VelocityWelcome.msrepository.msr-sponge.sponge-config.main" target="1.8" />
+      <module name="VelocityWelcome.msrepository.msr-sponge.sponge-config.test" target="1.8" />
+      <module name="VelocityWelcome.msrepository.msr-sponge.sponge-repository.main" target="1.8" />
+      <module name="VelocityWelcome.msrepository.msr-sponge.sponge-repository.test" target="1.8" />
+      <module name="VelocityWelcome.msrepository.msr-sponge.test" target="1.8" />
+      <module name="VelocityWelcome.msrepository.test" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+</project>
